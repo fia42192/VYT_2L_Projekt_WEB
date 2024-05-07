@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvodní stránka</title>
+    <link rel="icon" href="ikona.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="border">
+        <ul class="panel">
+            <li class="hideOnMobile"><a href="index.html">Úvodní stránka</a></li>
+            <li class="hideOnMobile"><a href="aquatera.html">Aquatera</a></li>
+            <li class="hideOnMobile"><a href="chov.html">Chov štírů</a></li>
+            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="menu_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li class="close" onclick="hideSidebar()"><a href="#"><img src="close_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+            <li><a href="index.html">Úvodní stránka</a></li>
+            <li><a href="aquatera.html">Aquatera</a></li>
+            <li><a href="chov.html">Chov štírů</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Vítejte na úvodní stránce</h1>
+        <p>Na této stránce se dozvíte všechny informace o námi pořádané burze Aquatera, která se pravidelně pořádá na Výstavišti Flóra v Olomouci, dále se zde dozvíte o chovu dvou druhů štírů, první je pralesní vlhkomilný štír černé barvy Heterometrus Spinifer a druhý je žlutý pouštní suchomilný štír s latinským názvem Leiurus Quinquestriatus, který je na první příčce v jedovatosti štírů.</p>
+    
+        <!-- <div class="carousel" id="faqCarousel">
+            <div class="carousel-item">
+                <h3>Kdy se koná burza Aquatera?</h3>
+                <p>Burza Aquatera se koná pravidelně každý měsíc. Přesné termíny najdete v sekci Aquatera.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Je bezpečné chovat štíra Leiurus Quinquestriatus?</h3>
+                <p>Štír Leiurus Quinquestriatus je velmi jedovatý a jeho chov vyžaduje zkušenosti a zvláštní opatrnosti. Více informací najdete v sekci Chov štírů.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Je možné zakoupit štíra na burze Aquatera?</h3>
+                <p>Na burze Aquatera je možné zakoupit štíra Leiurus Quinquestriatus, ale pouze pokud máte potřebné zkušenosti s chovem jedovatých štírů. Více informací najdete v sekci Aquatera.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Je možné zakoupit štíra Leiurus Quinquestriatus v České republice?</h3>
+                <p>Štír Leiurus Quinquestriatus je jedovatý a jeho chov je v České republice zakázán. Více informací najdete v sekci Chov štírů.</p>
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <button id="prevButton">Předchozí</button>
+            <button id="nextButton">Další</button>
+        </div> -->
+
+
+        
+        
+        
+        
+        <div id="reviryContent">
+
+            <h2>Často kladené otázky</h2>
+
+            <div id="reviryButtons">
+                <button onclick="changeRevir(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg></button>
+                <button onclick="changeRevir(1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></button>
+                <!-- Přidej další tlačítka pro další revíry -->
+            </div> 
+
+
+
+            <div class="revir" id="revir1">
+                <h3>Mohu si na Aquateře koupit nějakého živočicha ikdyž mi není 18+?</h3>
+                <p>Ano, není zde nastaven žádný minimální věk pro možnost si koupit třeba štíra, záleží pak jen na prodejci.</p>
+            </div>
+            <div class="revir" id="revir2">
+                <h3>Je bezpečné chovat štíra Leiurus Quinquestriatus?</h3>
+                <p>Štír Leiurus Quinquestriatus je nejjedovatější štír na světě a jeho chov vyžaduje zkušenosti a zvláštní opatrnosti. Více informací najdete v sekci <a class="odkaz" href="chov.html">Chov štírů</a>.</p>
+            </div>
+            <div class="revir" id="revir3">
+                <h3>Je možné si zde pronajmout stůl na prodej?</h3>
+                <p>Samozřejmě! Napiště nám nebo zavolejte, kontakt najdete na záložce Kontakt.</p>
+            </div>
+            <div class="revir" id="revir4">
+                <h3>Lze se k Vám dostat i hromadnou dopravou?</h3>
+                <p>Jistě, dostanete se k nám tramvají č. 4 a 1</p>
+            </div>
+        </div>
+
+
+        <div id="recenzeContent">
+            <div class="recenze" id="recenze1">
+                <h3>Tomáš Hončík</h3>
+                <p>Máte krásné čísté prostory, dobré rozložení stolků. Určitě se vrátím!</p>
+            </div>
+            <div class="recenze" id="recenze2">
+                <h3>Jaroslav Krbec</h3>
+                <p>Celá akce je skvěle zorganizována a ten Váš web? Přímo nádhera!</p>
+            </div>
+            <div class="recenze" id="recenze3">
+                <h3>Daniel Deutsch</h3>
+                <p>Milí prodejci, levné vstupné, spoustu zboží. Spokojenost!</p>
+            </div>
+            <div class="recenze" id="recenze4">
+                <h3>Lukáš Jurák</h3>
+                <p>Lze tu najít i krásné vytisklé výrobky z PLA! A za nízké ceny.</p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,592 @@
+.sidebar {
+    width: 100%;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sidebar li {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #79ffb2;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.sidebar a:hover {
+    background-color: lightblue;
+    transition: 0.3s;
+    transform: scale(1.05);
+    background-color: #79fe9b;
+    color: black;
+}
+
+.sidebar li:first-child {
+    margin-right: auto;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL'0,'wght'400, ;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        transition: ease;
+    }
+
+    .content{
+        margin: 0;
+        margin-bottom: 20px;
+    
+    }
+}
+
+@media (max-width: 200px) {
+    .sidebar {
+        display: flex;
+        width: 100%;
+        height: 40vh; /* Změna z 'auto' na '100vh' */
+        box-sizing: border-box;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+
+    .panel {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 0px;
+        height: 8vh;
+    }
+
+    .border {
+        overflow-y: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+@media(max-width: 550px){
+    .sidebar{
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        overflow-x: hidden !important   ;
+        overflow-y: hidden;
+    }
+
+    body, html {
+        overflow-x: hidden;
+    }
+    
+    .content{
+        overflow: visible;
+    }
+
+    .recenze{
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+
+
+body {
+    background: url("pozadi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.border {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.ul .panel{
+    list-style: none;
+    display: flex;
+    justify-content: center ;
+    width: 90%;
+    gap: 100px;
+}
+
+.panel {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.panel li a {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #79ffb2;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.panel li a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #79fe9b;
+    transform: scale(1.05);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panel li a{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius:10px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.content {
+    position: relative;
+    margin-right: 130px;
+    margin-left: 130px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+    backdrop-filter: blur(600px);
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 200px; /* Upravte podle potřeby */
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Prostor mezi tlačítky */
+}
+
+/* Skryj všechny revíry */
+.revir {
+    position: absolute;
+    width: 100%;
+    /* height: auto; */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow: auto;
+    padding-right: 30px; /* Přidáno pro odsazení textu od pravého okraje */
+    margin-bottom: 10px;
+    margin-top: 100px;
+    /* padding-bottom: 10px; */
+    /* overflow-wrap: break-word; /* Přidáno pro přerušení dlouhých slov */
+    /* word-wrap: break-word; */ 
+}
+
+.revir p {
+    overflow-wrap: break-word; /* Zajistí zalamování dlouhých slov */
+    word-wrap: break-word; /* Alternativa pro starší prohlížeče */
+    white-space: normal; /* Zabrání zalamování textu na nové řádky */
+    margin-bottom: 10px;
+    /* padding-bottom: 20px;
+    box-sizing: content-box; */
+}
+
+@media (max-width: 440px) {
+    .revir {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        overflow: auto;
+        padding-right: 30px;
+    }
+
+    .revir p {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: normal;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+.revir.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#reviryButtons {
+    margin-left: 20px; /* Odsazení od levého kraje */
+  }
+  #reviryContent {
+    position: relative;
+    border: 2px solid #79ffb2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    height: auto;
+    min-height: 200px; /* Přidání minimální výšky */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+  
+  #reviryButtons button {
+    width: 90px; /* Šířka tlačítka */
+    height: 50px; /* Výška tlačítka */
+    padding: 10px; /* Vnitřní odsazení */
+    margin: 0 5px; /* Odsazení mezi tlačítky */
+    background-color: #79ffb2; /* Barva pozadí */
+    border: none; /* Bez rámečku */
+    cursor: pointer; /* Ukazatel myši se změní na ukazatel ruky při najetí */
+    border-radius: 5px; /* Zaoblené rohy */
+  }
+  
+  #reviryButtons button svg {
+    width: 100%; /* Šířka ikony */
+    height: 100%; /* Výška ikony */
+  }
+  
+  #reviryButtons button:hover {
+    background-color: #79fe9b; /* Barva pozadí při najetí myši */
+    transition: background-color 0.3s; /* Plynulý přechod barvy pozadí */
+  }
+
+  @media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        transition: ease;
+    }
+}
+
+    @media (max-width: 300px) {
+        .border {
+            height: fit-content;
+            overflow: auto;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        #reviryButtons button {
+            width: 30px;
+            height: 30px;
+        }
+
+        #recenzeContent {
+            width: auto;
+        }
+
+        .content{
+            overflow-x: hidden;
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .content {
+            overflow-x: hidden;
+        }
+        .sidebar {
+        width: 100%;
+        height: 20vh; /* Změna z 'auto' na '100vh' */
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto; /* Přidáno, aby umožnilo posouvání, pokud obsah přesáhne výšku */
+        }
+    }
+
+    @media (max-width: 350px) {
+        .recenze {
+            width: 100%;
+            box-sizing: border-box;
+            justify-content: left;
+            margin-right: 20px;
+            width: fit-content;
+        }
+    }
+
+
+
+
+@media(max-width: 550px){
+    .sidebar{
+        /* width: 100%; */
+        width: auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        margin: 10px;
+    }
+
+    .sidebar a {
+        font-size: large;
+        margin: 0;
+        padding: 0 px;
+    }
+
+    .panel li a {
+        margin: 0;
+    }
+
+    .panel {
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .close img{
+        width: 100%;
+    }
+
+    .recenze{
+        min-width: 0px;
+    }
+}
+
+
+  @media only screen and (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .border {
+        width: 100%;
+        max-width: calc(100% - 0px);
+
+    }
+
+    .img {
+        width: 99.9%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+
+    body {
+        background: url("pozadi.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .revir p {
+        font-size: 14px;
+        margin-right: 50px;
+    }
+
+    .revir h3 {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+    
+    #reviryContent h2 {
+        font-size: 20px;
+    }
+
+    body {
+        justify-content: center;
+    }
+
+    .content{
+        padding: 0 20px;
+        margin-top: 0px;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    
+    }
+
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    #recenzeContent {
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
+
+    .recenze {
+        width: 300px;
+        max-width: 300px;
+        justify-content: center;
+        margin: bottom 20px;
+    }
+
+    .border{
+        position: static;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.revir p {
+    word-wrap: break-word;
+    margin-right: 30px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.odkaz {
+    color: black;
+}
+
+
+/* .recenze {
+    display: none; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.recenze.active {
+    display: block;
+} */
+
+.recenze {
+    opacity: 0; /* Skryje všechny recenze */
+    transition: opacity 1s ease-in-out; /* Přidá plynulý přechod */
+    padding: 20px;
+    border: 2px solid #79ffb2;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* min-width: 300px;    */
+    width: auto;
+    position: absolute;
+}
+
+.recenze.active {
+    opacity: 1; /* Zobrazí aktivní recenzi */
+}
+
+#recenzeContent {
+    height: 200px;
+    width: 500px;
+    position: relative;
+    padding-left: 20px;
+    min-width: 300px;
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}

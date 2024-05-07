@@ -1,0 +1,153 @@
+.sidebar {
+    width: 100%;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sidebar li {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #79ffb2;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.sidebar a:hover {
+    background-color: lightblue;
+    transition: 0.3s;
+    transform: scale(1.05);
+    background-color: #79fe9b;
+    color: black;
+}
+
+.sidebar li:first-child {
+    margin-right: auto;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL'0,'wght'400, ;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        transition: ease;
+    }
+}
+
+@media(max-width: 550px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
+body {
+    background: url("pozadi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.border {
+    margin-left: 5px;
+    margin-right: 0px;
+    border: solid;
+    width: 100%;
+}
+
+.ul .panel{
+    list-style: none;
+    display: flex;
+    justify-content: center ;
+    width: 90%;
+    gap: 100px;
+}
+
+.panel {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.panel li a {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #79ffb2;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.panel li a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #79fe9b;
+    transform: scale(1.05);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panel li a{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius:10px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: lightblue;
+}

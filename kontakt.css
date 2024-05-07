@@ -1,0 +1,284 @@
+.sidebar {
+    width: 100%;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sidebar li {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #79ffb2;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.sidebar a:hover {
+    background-color: lightblue;
+    transition: 0.3s;
+    transform: scale(1.05);
+    background-color: #79fe9b;
+    color: black;
+}
+
+.sidebar li:first-child {
+    margin-right: auto;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL'0,'wght'400, ;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        transition: ease;
+    }
+}
+
+@media(max-width: 550px){
+    .sidebar{
+        width: 100%;
+    }
+
+    .content iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body{
+        background: url("pozadi.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 105vh;
+    }
+
+    body.menu-open {
+        min-height: 140vh;
+    }
+
+    .map .ig {
+        margin-left: 0px;
+    }
+
+    .flora {
+        width: 45%;
+    }
+
+    .ig {
+        width: 100%;
+    }
+
+    .ikony {
+        width: 330px;
+    }
+
+    .content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+body {
+    background: url("pozadi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.border {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.ul .panel{
+    list-style: none;
+    display: flex;
+    justify-content: center ;
+    width: 90%;
+    gap: 100px;
+}
+
+.panel {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.panel li a {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #79ffb2;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.panel li a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #79fe9b;
+    transform: scale(1.05);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panel li a{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius:10px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.content {
+    margin-right: 130px;
+    margin-left: 130px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+    backdrop-filter: blur(500px);
+
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.map iframe {
+    border: 5px solid #000;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.map {
+    margin: 0px;
+}
+
+
+.flora {
+    border: solid 2px;
+    border-radius: 8px;
+    margin-right: 120px;
+}
+
+.ikony {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.content iframe {
+    width: 70%;
+    max-width: 100%;
+}
+
+.map-and-flora {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.map-and-flora iframe, .map-and-flora .flora {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .map-and-flora {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .map-and-flora iframe, .map-and-flora .flora {
+        width: 50%;
+    }
+
+    .map-and-flora iframe {
+        margin-left: 110px;
+    }
+
+    .content{
+        width: 64%;
+    }
+}
+
+@media (max-width: 767px) {
+    .map-and-flora iframe {
+        margin-bottom: 10px;
+    }
+}
+
+.transparent {
+    color: transparent;
+    font-size: 50%;
+}
