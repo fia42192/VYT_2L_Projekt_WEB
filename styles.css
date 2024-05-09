@@ -369,10 +369,6 @@ p {
             height: 30px;
         }
 
-        #recenzeContent {
-            width: auto;
-        }
-
         .content{
             overflow-x: hidden;
             width: 90%;
@@ -389,6 +385,10 @@ p {
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto; /* Přidáno, aby umožnilo posouvání, pokud obsah přesáhne výšku */
+        }
+
+        #reviryButtons {
+            width: 100%;
         }
     }
 
@@ -475,16 +475,29 @@ p {
     .revir p {
         font-size: 14px;
         margin-right: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
     }
 
     .revir h3 {
         font-size: 16px;
         margin-right: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     
     #reviryContent h2 {
-        font-size: 20px;
+        font-size: 16px;
+        width: 50% !important; 
     }
+
+    #reviryButtons button {
+        width: 60px;
+        height: 35px;
+        margin-bottom: 0;
+    }
+
 
     body {
         justify-content: center;
@@ -510,15 +523,20 @@ p {
     }
 
     #recenzeContent {
-        width: 100%;
-        max-width: calc(100% - 40px);
+        width: 70%;
+        /* max-width: calc(100% - 40px); */
+        height: 100%;
+        float: left;
+        margin-right: 30px;
     }
 
     .recenze {
-        width: 300px;
-        max-width: 300px;
-        justify-content: center;
-        margin: bottom 20px;
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .recenze p {
+        font-size: 14px;
     }
 
     .border{
@@ -528,6 +546,23 @@ p {
         left: 0;
         padding-bottom: 0px;
         margin-bottom: 30px;
+    }
+
+    #recenzeContent { 
+        width: 70% !important;
+        /* width: 100% !important;
+        max-width: 100% !important; */
+        /* height: auto;
+        margin-bottom: 10px;
+        object-fit: contain;
+        margin: auto; 
+        float: none; 
+        display: block;  */
+    }
+
+    .recenze.active {
+        opacity: 1; /* Zobrazí aktivní recenzi */
+        width: 70%;
     }
 
 }
@@ -580,11 +615,14 @@ h2 {
 
 #recenzeContent {
     height: 200px;
-    width: 500px;
+    /* width: 500px; */
+    width: 100%;
+    max-width: calc(100% - 40px);
     position: relative;
     padding-left: 20px;
     min-width: 300px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .hidden {

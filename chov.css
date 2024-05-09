@@ -63,12 +63,21 @@
     }
 }
 
+.transparent {
+    color: transparent;
+    font-size: 50%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
 
 
 body {
     background: url("pozadi.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -76,14 +85,16 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    -ms-overflow-style: none !important;
 }
 
 
 .border {
     margin-left: 5px;
-    margin-right: 0px;
+    margin-right: 5px;
     border: solid;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .ul .panel{
@@ -150,4 +161,73 @@ a {
 
 a:hover {
     color: lightblue;
+}
+
+.content {
+    margin-right: 130px;
+    margin-left: 130px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+    backdrop-filter: blur(600px);
+
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.odsazeni {
+    text-indent: 30px;
+}
+
+.heterometrus1 {
+    float: right;
+    width: 45%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.content1 {
+    margin-bottom: 0px;
+}
+
+iframe {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        object-fit: contain;
+        margin: auto; /* Toto zarovná obrázek na střed */
+        float: none; /* Toto zruší původní zarovnání */
+        display: block; /* Toto zajistí, že obrázek bude na novém řádku */
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        object-fit: contain;
+        margin: auto; /* Toto zarovná obrázek na střed */
+        float: none; /* Toto zruší původní zarovnání */
+        display: block; /* Toto zajistí, že obrázek bude na novém řádku */
+    }
+
 }

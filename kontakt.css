@@ -168,11 +168,11 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.content {
+/* .content {
     width: 100%;
     padding: 20px;
     position: relative;
-}
+} */
 
 
 ul {
@@ -191,18 +191,32 @@ a:hover {
     color: lightblue;
 }
 
-.content {
-    margin-right: 130px;
-    margin-left: 130px;
+/* .content {
+    /* margin-right: 130px;
+    margin-left: 130px; 
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     padding: 20px;
     border: solid;
     border-radius: 10px;
     backdrop-filter: blur(500px);
 
+} */
+
+.content {
+    position: relative;
+    margin-right: 130px;
+    margin-left: 130px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+    backdrop-filter: blur(600px);
 }
+
 
 .content h1 {
     text-align: center;
