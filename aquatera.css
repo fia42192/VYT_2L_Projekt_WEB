@@ -1,3 +1,7 @@
+body, html {
+    overflow-x: hidden;
+}
+
 .sidebar {
     width: 100%;
     list-style: none;
@@ -20,7 +24,7 @@
     color: black;
     font-weight: bold;
     font-size: 25px;
-    background-color: #79ffb2;
+    background-color: #4ced50;
     text-decoration: none;
     transition: color 0.3s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,6 +59,10 @@
         display: block;
         transition: ease;
     }
+
+    body {
+        overflow-x: hidden !important;
+    }
 }
 
 @media(max-width: 550px){
@@ -72,7 +80,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background: url("pozadi.png");
+    background: url("pozadi1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -82,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;
 }
@@ -117,7 +125,7 @@ body {
     color: black;
     font-weight: bold;
     font-size: 25px;
-    background-color: #79ffb2;
+    background-color: #4ced50;
     text-decoration: none;
     transition: color 0.3s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
