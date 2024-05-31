@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
 
 body {
     /* background: url("pozadi1.png"); */
-    background-color: #d1d2d2;
+    background-color: #9DBEBB;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -131,24 +131,24 @@ body {
 }
 
 .stranky a{
-    background-color: #b4b6b7;
+    background-color: #77ACA2;
     border-radius: 15px;
 
 }
 
 .stranky a:hover {
-    background-color: #c4d9e6;
+    background-color: #77B5B7;
     
 }
 
 .aktualnistranka a {
-    background-color: #7a7b7d;
+    background-color: #308b84;
     border-radius: 15px;
 
 }
 
 .aktualnistranka a:hover {
-    background-color: #c4d9e6;
+    background-color: #77B5B7;
 }
 
 .panel li a:hover {
