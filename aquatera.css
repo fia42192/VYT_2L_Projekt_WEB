@@ -80,7 +80,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background: url("pozadi1.png");
+    /* background: url("pozadi1.png"); */
+    background-color: #d1d2d2;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -125,16 +126,38 @@ body {
     color: black;
     font-weight: bold;
     font-size: 25px;
-    background-color: #4ced50;
+    /* background-color: #a2a4a5; */
+    /* background-color: #b4b6b7; */
     text-decoration: none;
     transition: color 0.3s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.stranky a{
+    background-color: #b4b6b7;
+    border-radius: 15px;
+
+}
+
+.stranky a:hover {
+    background-color: #c4d9e6;
+    
+}
+
+.aktualnistranka a {
+    background-color: #7a7b7d;
+    border-radius: 15px;
+
+}
+
+.aktualnistranka a:hover {
+    background-color: #c4d9e6;
+}
+
 .panel li a:hover {
     color: black;
     font-weight: bold;
-    background-color: #79fe9b;
+    /* background-color: #c4d9e6; */
     transform: scale(1.05);
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
