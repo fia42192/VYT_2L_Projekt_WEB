@@ -82,7 +82,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
     }
     
     body{
-        background: url("pozadi.png");
+        background-color: #d1d2d2;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         min-height: 105vh;

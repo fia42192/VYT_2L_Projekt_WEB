@@ -486,7 +486,8 @@ p {
     }
 
     body {
-        background: url("pozadi1.png");
+        /* background: url("pozadi1.png"); */
+        background-color: #d1d2d2;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
